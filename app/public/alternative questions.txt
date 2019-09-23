@@ -1,0 +1,71 @@
+<p>
+      1. Would you be comfortable with someone who identifies with the views of a political party different from your own?
+    </p>
+
+    <p>
+      2. Can you still be in a relationship with someone who has cheated on you?
+    </p>
+
+    <p>
+      3. Do you consider yourself an introvert, extrovert or somewhere in between?
+    </p>
+
+    <p>
+      4. Would you consider having kids one day?
+    </p>
+
+    <p>
+      5. Would you consider yourself a jelous/overprotective partner?
+    </p>
+
+    <p>
+      6. Do you consider yourself an introvert, extrovert or somewhere in between?
+    </p>
+
+    <p>
+      7. Have You Ever Joined Any Meetup Groups?
+    </p>
+
+    <p>
+      6. Do you consider yourself an introvert, extrovert or somewhere in between?
+    </p>
+
+<p>
+    1. What Is Your Weirdest “Quirk”?
+  </p>
+
+  <p>
+    2. What’s The Worst Movie You’ve Ever Seen?
+  </p>
+
+  <p>
+    3. If You Opened A Business, What Type Of Business Would You Start?
+  </p>
+
+  <p>
+    4. What’s Your Favorite App On Your Phone?
+  </p>
+
+  <p>
+    5. What Do You Like But Are Kind Of Embarrassed To Admit?
+  </p>
+
+  <p>
+    6. What Are You Always Game For?
+  </p>
+
+  <p>
+    7. Have You Ever Joined Any Meetup Groups?
+  </p>
+
+  <p>
+    8. What Would Your Perfect Morning Be Like?
+  </p>
+
+  <p>
+    9. How Techie Are You?
+  </p>
+
+  <p>
+    10. What Are You Kind Of Obsessed With These Days?
+  </p>
