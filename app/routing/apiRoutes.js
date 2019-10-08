@@ -11,8 +11,9 @@ app.get("/api/friends", function(req, res) {
 
 app.post("/api/friends", function(req, res) {
 var newFriend = req.body;
-newFriend.routeName = newFriend.firstName;
+console.log(newFriend);
+// newFriend.routeName = newFriend.firstName;
   // app/data/friends.js//
-  friends.push(newFriend)
+  // friends.push(newFriend)
   // This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
-});
+// });
