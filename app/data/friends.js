@@ -4,16 +4,16 @@ var friends = [
       "name": "Ally",
       "photo": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "scores": [ 
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
+        5, // 4
+        1,  //  0
+        4,  //  3
+        4,  //  3
+        5,  //  4
+        1,  //  0
+        2, // 1
+        5, // 4
+        4,  //  3
+        1  // 0
   ]
     },
     
@@ -84,7 +84,8 @@ var friends = [
         2
       ]
     }
-    
+  
     ];
 
+    
     module.exports = friends;
