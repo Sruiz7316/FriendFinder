@@ -11,6 +11,7 @@ app.get("/friends", function(req, res) {
 
 app.post("/friends", function(req, res) {
 var data = req.body;
+friends.push(data);
 var currentUserScores = data.scores;
 console.log("currentUserScores", currentUserScores);
 
