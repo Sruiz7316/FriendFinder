@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Survey Questions</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -28,155 +27,188 @@
       I like pets.
     </h3>
 
-    <form action="/action_page.php">
-      <select name="options">
-        <option value="SD">1.Strongly Disagree</option>
-        <option value="Disagree">2.Disagree</option>
-        <option value="NO">3.No Opinion</option>
-        <option value="Agree">4.Agree</option>
-        <option value="SA">5.Strongly Agree</option>
-      </select>
+    <select name="options" id="question1">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-      <h2>Question 2</h2>
-      <h3>
-        I beleive practicing financial literacy is essential to accruing wealth.
-      </h3>
-      <form action="/action_page.php">
-        <select name="options">
-          <option value="SD">1.Strongly Disagree</option>
-          <option value="Disagree">2.Disagree</option>
-          <option value="NO">3.No Opinion</option>
-          <option value="Agree">4.Agree</option>
-          <option value="SA">5.Strongly Agree</option>
-        </select>
+    <h2>Question 2</h2>
+    <h3>
+      I beleive practicing financial literacy is essential to accruing wealth.
+    </h3>
 
-        <h2>Question 3</h2>
-        <h3>
-          A friendship is a long-term commitment.
-        </h3>
-        <form action="/action_page.php">
-          <select name="options">
-            <option value="SD">1.Strongly Disagree</option>
-            <option value="Disagree">2.Disagree</option>
-            <option value="NO">3.No Opinion</option>
-            <option value="Agree">4.Agree</option>
-            <option value="SA">5.Strongly Agree</option>
-          </select>
+    <select name="options" id="question2">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-          <h2>Question 4</h2>
-          <h3>
-            I like children.
-          </h3>
-          <form action="/action_page.php">
-            <select name="options">
-              <option value="SD">1.Strongly Disagree</option>
-              <option value="Disagree">2.Disagree</option>
-              <option value="NO">3.No Opinion</option>
-              <option value="Agree">4.Agree</option>
-              <option value="SA">5.Strongly Agree</option>
-            </select>
+    <h2>Question 3</h2>
+    <h3>
+      A friendship is a long-term commitment.
+    </h3>
+    <select name="options" id="question3">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-            <h2>Question 5</h2>
-            <h3>
-              I like singlehood.
-            </h3>
-            <form action="/action_page.php">
-              <select name="options">
-                <option value="SD">1.Strongly Disagree</option>
-                <option value="Disagree">2.Disagree</option>
-                <option value="NO">3.No Opinion</option>
-                <option value="Agree">4.Agree</option>
-                <option value="SA">5.Strongly Agree</option>
-              </select>
+    <h2>Question 4</h2>
+    <h3>
+      I like children.
+    </h3>
 
-              <h2>Question 6</h2>
-              <h3>
-                Respect is essential to a long-term relationship.
-              </h3>
-              <form action="/action_page.php">
-                <select name="options">
-                  <option value="SD">1.Strongly Disagree</option>
-                  <option value="Disagree">2.Disagree</option>
-                  <option value="NO">3.No Opinion</option>
-                  <option value="Agree">4.Agree</option>
-                  <option value="SA">5.Strongly Agree</option>
-                </select>
+    <select name="options" id="question4">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-                <h2>Question 7</h2>
-                <h3>
-                  Opposing core values and beliefs deteriorate relationships.
-                </h3>
-                <form action="/action_page.php">
-                  <select name="options">
-                    <option value="SD">1.Strongly Disagree</option>
-                    <option value="Disagree">2.Disagree</option>
-                    <option value="NO">3.No Opinion</option>
-                    <option value="Agree">4.Agree</option>
-                    <option value="SA">5.Strongly Agree</option>
-                  </select>
+    <h2>Question 5</h2>
+    <h3>
+      I like singlehood.
+    </h3>
+    <select name="options" id="question5">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-                  <h2>Question 8</h2>
-                  <h3>
-                    I am a religious and spiritial person.
-                  </h3>
-                  <form action="/action_page.php">
-                    <select name="options">
-                      <option value="SD">1.Strongly Disagree</option>
-                      <option value="Disagree">2.Disagree</option>
-                      <option value="NO">3.No Opinion</option>
-                      <option value="Agree">4.Agree</option>
-                      <option value="SA">5.Strongly Agree</option>
-                    </select>
+    <h2>Question 6</h2>
+    <h3>
+      Respect is essential to a long-term relationship.
+    </h3>
+    <select name="options" id="question6">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-                    <h2>Question 9</h2>
-                    <h3>
-                      I am techie.
-                    </h3>
-                    <form action="/action_page.php">
-                      <select name="options">
-                        <option value="SD">1.Strongly Disagree</option>
-                        <option value="Disagree">2.Disagree</option>
-                        <option value="NO">3.No Opinion</option>
-                        <option value="Agree">4.Agree</option>
-                        <option value="SA">5.Strongly Agree</option>
-                      </select>
+    <h2>Question 7</h2>
+    <h3>
+      Opposing core values and beliefs deteriorate relationships.
+    </h3>
+    <select name="options" id="question7">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-                      <h2>Question 10</h2>
-                      <h3>
-                        Traveing is important to me.
-                      </h3>
-                      <form action="/action_page.php">
-                        <select name="options">
-                          <option value="SD">1.Strongly Disagree</option>
-                          <option value="Disagree">2.Disagree</option>
-                          <option value="NO">3.No Opinion</option>
-                          <option value="Agree">4.Agree</option>
-                          <option value="SA">5.Strongly Agree</option>
-                        </select>
-                        <br>
-                        <br>
+    <h2>Question 8</h2>
+    <h3>
+      I am a religious and spiritial person.
+    </h3>
+    <select name="options" id="question8">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i
-                            class="fa fa-check-circle" aria-hidden="true"></i>
-                          Submit</button>
+    <h2>Question 9</h2>
+    <h3>
+      I am techie.
+    </h3>
+    <select name="options" id="question9">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
 
-                        <footer class="footer">
-                          <div class="container">
-                            <p><a href="/api/friends">API Friends List</a> | <a
-                                href="https://github.com/afhaque/friendfinder">GitHub
-                                Repo</a>
-                            </p>
-                          </div>
-                        </footer>
+    <h2>Question 10</h2>
+    <h3>
+      Traveing is important to me.
+    </h3>
+    <select name="options" id="question10">
+      <option value="SD">1.Strongly Disagree</option>
+      <option value="Disagree">2.Disagree</option>
+      <option value="NO">3.No Opinion</option>
+      <option value="Agree">4.Agree</option>
+      <option value="SA">5.Strongly Agree</option>
+    </select>
+    <br>
+    <br>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
+            Repo</a>
+        </p>
+      </div>
+    </footer>
 
   </div>
 
-  <SCRIPT>
+  <script>
 
-                        // $("#submit").on("click", function (event) {
-                        //   event.preventDefault();
+    function savingData() {
+      var data = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [
+          $("#question1").val(),
+          $("#question2").val(),
+          $("#question3").val(),
+          $("#question4").val(),
+          $("#question5").val(),
+          $("#question6").val(),
+          $("#question7").val(),
+          $("#question8").val(),
+          $("#question9").val(),
+          $("#question10").val()
+        ]
+      }
+      return data;
+    };
+    
+    function essentialInfo() {
+      name: "",
+      photo: "",
+      calculatedScoresResult:
+    };
+    // var data = req.body;
+    var userScores = data.scores;
 
-  </SCRIPT>
+
+
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+      let data = savingData()
+
+      $.post("/api/friends", data, function (res) {
+
+        // $("#matchName").text(res.name);
+        // $("#matchImage").attr("src", res.photo);
+        // $("#modal").modal("toggle");
+
+      });
+    });
+
+  </script>
 
 
 </body>
+
+</html>

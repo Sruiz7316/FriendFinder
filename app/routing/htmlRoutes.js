@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 
-const app = express();
+const app = express.Router();
 
 app.get("/survey", function(req, res) {
     //catch all route that takes you to survey.html//

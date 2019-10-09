@@ -1,33 +1,88 @@
 var friends = [
 
     {
-      name: "Ally",
-      routename: "Ally",
-      age: 26
+      "name": "Ally",
+      "photo": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "scores": [ 
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+  ]
     },
     
     {
-      name: "Lucy",
-      routename: "Lucy",
-      age: 32
+      "name": "Lucy",
+      "photo": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "scores": [
+        1,
+        3,
+        5,
+        2,
+        4,
+        5,
+        4,
+        4,
+        2,
+        3
+      ]
     },
     
     {
-      name: "Cameron",
-      routename: "Cameron",
-      age: 25
+      "name": "Cameron",
+      "photo": "https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "scores":[
+        1,
+        3,
+        4,
+        2,
+        5,
+        5,
+        1,
+        3,
+        4,
+        4
+      ]
     },
     
     {
-      name: "Jonathan",
-      routename: "Jonathan",
-      age: 35
+      "name": "Joseph",
+      "photo": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" ,
+      "scores":[
+        3,
+        4,
+        5,
+        3,
+        4,
+        1,
+        2,
+        5,
+        3,
+        1
+      ]
     },
     
     {
-      name: "Joshua",
-      routename: "Joshua",
-      age: 27
+      "name": "Joshua",
+      "photo": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "scores":[
+        5,
+        4,
+        3,
+        2,
+        5,
+        1,
+        1,
+        4,
+        2,
+        2
+      ]
     }
     
     ];

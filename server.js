@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const routes = require("./app/routing/htmlRoutes");
+const friends = require("./app/routing/apiRoutes");
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", routes)
+app.use("/api", friends)
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
