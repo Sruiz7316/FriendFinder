@@ -151,6 +151,8 @@
         aria-hidden="true"></i>
       Submit</button>
 
+      <div id="response"></div>
+
     <footer class="footer">
       <div class="container">
         <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
@@ -198,6 +200,10 @@
 
       $.post("/api/friends", data, function (res) {
         console.log(res);
+        $('#response').html(`
+          <h3>Name: ${res.name}</h3>
+          <img src="${res.photo}">
+        `);
         // $("#matchName").text(res.name);
         // $("#matchImage").attr("src", res.photo);
         // $("#modal").modal("toggle");

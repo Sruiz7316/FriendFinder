@@ -10,47 +10,51 @@ app.get("/friends", function(req, res) {
 });
 
 app.post("/friends", function(req, res) {
-var data = req.body;
-friends.push(data);
-var currentUserScores = data.scores;
-console.log("currentUserScores", currentUserScores);
+  var data = req.body;
+  friends.push(data);
 
-var friendsScores = [];
-// Iterate over all my friends
-for(var currentFriendIndex = 0; currentFriendIndex < friends.length; currentFriendIndex++) {
-  // iterate over my friends scores subtracting each in the current iteration
-  // appending the result to an array
-  // sum the array and decide if they are my friend
-  var currentFriendScore = 0;
+  var currentUserScores = data.scores;
+  console.log("currentUserScores", currentUserScores);
 
-  for(var friendsScoreIndex = 0; friendsScoreIndex < friends[currentFriendIndex].scores.length; friendsScoreIndex++) {
-    var currentUserScore = parseInt(currentUserScores[friendsScoreIndex]);
-    var friendScore = parseInt(friends[currentFriendIndex].scores[friendsScoreIndex]);
+  var friendsScores = [];
+  // Iterate over all my friends
+  for(var currentFriendIndex = 0; currentFriendIndex < friends.length; currentFriendIndex++) {
+    // iterate over my friends scores subtracting each in the current iteration
+    // appending the result to an array
+    // sum the array and decide if they are my friend
+    var currentFriendScore = 0;
 
-    var calculatedScore = Math.abs(currentUserScore - friendScore);
-    currentFriendScore += calculatedScore;
+    for(var friendsScoreIndex = 0; friendsScoreIndex < friends[currentFriendIndex].scores.length; friendsScoreIndex++) {
+      var currentUserScore = parseInt(currentUserScores[friendsScoreIndex]);
+      var friendScore = parseInt(friends[currentFriendIndex].scores[friendsScoreIndex]);
+
+      var calculatedScore = Math.abs(currentUserScore - friendScore);
+      currentFriendScore += calculatedScore;
+    }
+
+    friendsScores.push(currentFriendScore);
   }
 
-  friendsScores.push(currentFriendScore);
-}
+  var closestFriendScore = friendsScores[0];
+  var closestFriend;
 
-var closestFriendScore = friendsScores[0];
-var closestFriendIndex = 0;
+  console.log("a", friendsScores);
+  console.log(closestFriendScore, "closestFriendScore");
 
-console.log("a", friendsScores);
-console.log(closestFriendScore);
+  console.log(friends)
 
-for(var i = 1; i < friendsScores.length; i++) {
-  if (friendsScores[i] < closestFriendScore) {
-    closestFriendScore = friendsScores[i];
-    closestFriendIndex = i;
+  for(var i = 1; i < friendsScores.length; i++) {
+    if (friendsScores[i] < closestFriendScore && friends[i].name !== data.name) {
+      closestFriendScore = friendsScores[i];
+      closestFriend = friends[i];
+    }
   }
-}
 
-console.log(closestFriendIndex);
-
-res.json(friends[closestFriendIndex]);
+  res.json(closestFriend);
 });
+
+
+
 // for(var i = 0; i < friends.length;i++) {
 //   var matchArray = [];
 //   matchArray.push(match);
